@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | ODM Payments</title>
+  <meta name="description" content="Privacy policy of ODM Payments, L.L.C. — what data we collect, why we collect it, how we protect it, and the rights you have over your information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #f4f7fb;
+      --ink: #0f172a;
+      --ink-deep: #020617;
+      --muted: #64748b;
+      --muted-2: #475569;
+      --accent: #5c67d8;
+      --grad: linear-gradient(135deg, #2756b6, #7b63c9);
+      --grad-btn: linear-gradient(135deg, #5c67d8, #7b63c9);
+      --line: rgba(15, 23, 42, 0.08);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #334155;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: .25s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 14px;
+      border: none;
+      background: var(--grad-btn);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .95rem;
+      box-shadow: 0 18px 40px rgba(92, 103, 216, 0.25);
+      transition: .3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 45px rgba(92, 103, 216, 0.35);
+    }
+
+    /* ---------- Page hero ---------- */
+    .page-hero {
+      padding: 80px 0 50px;
+      position: relative;
+      text-align: center;
+    }
+
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -120px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(59, 130, 246, .18), transparent 70%);
+      pointer-events: none;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      background: rgba(92, 103, 216, 0.08);
+      color: var(--accent);
+      border: 1px solid rgba(92, 103, 216, 0.12);
+      border-radius: 999px;
+      font-size: .85rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+      color: var(--ink-deep);
+    }
+
+    .page-hero h1 span {
+      color: var(--accent);
+    }
+
+    .page-hero p {
+      font-size: 1.08rem;
+      color: var(--muted-2);
+      max-width: 640px;
+      margin: 0 auto 10px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: .88rem;
+      color: var(--muted);
+    }
+
+    /* ---------- Quick summary ---------- */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 40px 0 0;
+    }
+
+    .summary-card {
+      background: white;
+      border-radius: 24px;
+      padding: 26px;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      box-shadow: 0 16px 35px rgba(15, 23, 42, 0.05);
+      text-align: left;
+    }
+
+    .summary-card .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(92, 103, 216, 0.1);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 14px;
+    }
+
+    .summary-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .summary-card p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin: 0;
+      max-width: none;
+    }
+
+    /* ---------- Policy body ---------- */
+    .policy-wrap {
+      padding: 60px 0 90px;
+    }
+
+    .policy-card {
+      background: white;
+      border-radius: 30px;
+      padding: clamp(28px, 5vw, 56px);
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      box-shadow: 0 24px 55px rgba(15, 23, 42, 0.06);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .policy-card section {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    .policy-card section:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-card h2 {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      color: var(--ink-deep);
+    }
+
+    .policy-card h2 .num {
+      min-width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(92, 103, 216, 0.12);
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: .95rem;
+      flex: none;
+    }
+
+    .policy-card p,
+    .policy-card li {
+      color: var(--muted-2);
+      font-size: .98rem;
+      margin-bottom: 12px;
+    }
+
+    .policy-card ul {
+      list-style: none;
+      margin: 6px 0 12px;
+    }
+
+    .policy-card ul li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 10px;
+    }
+
+    .policy-card ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .policy-card a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .highlight {
+      background: rgba(92, 103, 216, 0.06);
+      border: 1px solid rgba(92, 103, 216, 0.14);
+      border-radius: 18px;
+      padding: 18px 22px;
+      margin: 14px 0;
+    }
+
+    .highlight p {
+      margin: 0;
+      color: #334155;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta-box {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      border-radius: 34px;
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+      max-width: 860px;
+      margin: 50px auto 0;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 1.15;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .cta-box h2 span {
+      color: #8e84df;
+    }
+
+    .cta-box p {
+      color: rgba(255, 255, 255, 0.72);
+      max-width: 520px;
+      margin: 0;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      padding: 70px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr 1.1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 18px;
+      font-size: 1rem;
+    }
+
+    .footer-column p,
+    .footer-column a {
+      color: var(--muted);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1.7;
+      font-size: .95rem;
+    }
+
+    .footer-column a:hover {
+      color: var(--accent);
+    }
+
+    .disclaimer {
+      font-size: .82rem;
+      color: #94a3b8;
+      max-width: 760px;
+      margin-bottom: 26px;
+    }
+
+    .copyright {
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      color: #94a3b8;
+      font-size: .9rem;
+      text-align: center;
+    }
+
+    /* ---------- Reveal ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .reveal.d1 { transition-delay: .1s }
+    .reveal.d2 { transition-delay: .2s }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none }
+      * { scroll-behavior: auto }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 980px) {
+      nav {
+        display: none;
+      }
+
+      .navbar {
+        padding: 16px 0;
+        gap: 16px;
+      }
+
+      .logo img {
+        height: 46px !important;
+      }
+
+      .btn-primary {
+        padding: 12px 18px;
+        font-size: .9rem;
+        border-radius: 12px;
+      }
+
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cta-box {
+        display: grid;
+        padding: 36px 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: calc(100% - 24px);
+      }
+
+      .navbar {
+        padding: 14px 0;
+      }
+
+      .logo img {
+        height: 40px !important;
+      }
+
+      .navbar .btn-primary {
+        padding: 10px 14px;
+        font-size: .82rem;
+      }
+
+      .page-hero {
+        padding: 50px 0 30px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="../images/logo.png" alt="ODM Payments" style="height:56px; width:auto; display:block; object-fit:contain; max-width:none;">
+      </a>
+
+      <nav>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a href="mailto:support@odmpayments.com" class="btn-primary">Get In Touch</a>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="tag reveal">Customer Care • Store Policies</div>
+      <h1 class="reveal d1">Privacy <span>Policy</span></h1>
+      <p class="reveal d2">What we collect, why we collect it, and the control you keep over your own information — explained without jargon.</p>
+      <span class="updated reveal d2">Last updated: July 17, 2026</span>
+
+      <div class="summary-grid">
+        <div class="summary-card reveal">
+          <div class="icon">▦</div>
+          <h3>Minimal by design</h3>
+          <p>We only collect what's needed to sell and deliver our products. Nothing more.</p>
+        </div>
+        <div class="summary-card reveal d1">
+          <div class="icon">⃠</div>
+          <h3>Never sold</h3>
+          <p>We do not sell or rent your personal data to anyone, for any reason.</p>
+        </div>
+        <div class="summary-card reveal d2">
+          <div class="icon">⚙</div>
+          <h3>You stay in control</h3>
+          <p>Access, correct or delete your data with a single email — no hoops to jump through.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POLICY BODY ================= -->
+  <div class="policy-wrap">
+    <div class="container">
+      <div class="policy-card reveal">
+
+        <section>
+          <h2><span class="num">1</span> Who is responsible for your data</h2>
+          <p>This Privacy Policy explains how <strong>ODM Payments, L.L.C.</strong> ("ODM Payments", "we", "us") — a company registered in Delaware, United States, EIN 36-5156196, located at 131 Continental Dr, Suite 305, Newark, DE 19713, US — handles personal information when you visit odmpayments.com or buy one of our digital products.</p>
+          <p>It applies to our website, our SaaS tools and our InfoApps. If you have any question after reading it, email <a href="mailto:support@odmpayments.com">support@odmpayments.com</a>.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">2</span> What we collect</h2>
+          <p>We keep data collection to the minimum needed to run our business:</p>
+          <ul>
+            <li><strong>Order data:</strong> your name, email address and purchase confirmation, so we can deliver your product and provide support.</li>
+            <li><strong>Payment confirmation:</strong> our payment processor tells us that a payment succeeded, the amount and the last digits of the card. <strong>We never receive or store your full card number.</strong></li>
+            <li><strong>Product usage data:</strong> for SaaS tools, the information you choose to enter (for example, habit or wellness logs) and basic technical data needed to keep the tool working.</li>
+            <li><strong>Support messages:</strong> the emails you send us, so we can answer and keep a record of the conversation.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">3</span> How we use your information</h2>
+          <ul>
+            <li>To deliver the products you purchased and keep your access working.</li>
+            <li>To answer your messages and provide customer support.</li>
+            <li>To send transactional emails — receipts, access details, renewal and cancellation confirmations.</li>
+            <li>To meet legal obligations, such as tax and accounting records.</li>
+            <li>To prevent fraud and protect our customers and our services.</li>
+          </ul>
+          <p>We only send marketing emails if you have opted in, and every marketing email includes a working unsubscribe link.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">4</span> What we never do</h2>
+          <div class="highlight">
+            <p><strong>We do not sell or rent your personal data to third parties — ever.</strong> Your wellness data belongs to you: the information you log inside our tools is used to make the tool work for you, not to profile you or to be traded.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2><span class="num">5</span> Who we share data with</h2>
+          <p>We share personal data only with service providers that are essential to operating our business, and only the minimum each one needs:</p>
+          <ul>
+            <li><strong>Payment processing:</strong> our certified payment provider handles checkout and billing.</li>
+            <li><strong>Email delivery:</strong> a transactional email service sends receipts and access details.</li>
+            <li><strong>Hosting:</strong> our website and tools run on established cloud infrastructure providers.</li>
+          </ul>
+          <p>These providers process data under their own security and privacy obligations. We may also disclose data if required by law or to protect our legal rights.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">6</span> Cookies and analytics</h2>
+          <p>Our website uses only the cookies necessary for it to function — for example, keeping you signed in to a SaaS tool. If we use analytics, it is aggregate and privacy-conscious: to understand how many people visit our pages, not to track you across the internet.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">7</span> International customers</h2>
+          <p>We serve customers worldwide, and our services are operated from the United States — which means your data is processed there. Wherever you live, we apply the same principles described in this policy, and we honor the data rights granted by the laws of your country (such as the GDPR in the European Union or the LGPD in Brazil) to the extent they apply.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">8</span> How long we keep data</h2>
+          <ul>
+            <li><strong>Order and billing records:</strong> kept for as long as tax and accounting laws require.</li>
+            <li><strong>Product usage data:</strong> kept while your account or access is active, then deleted or anonymized.</li>
+            <li><strong>Support conversations:</strong> kept for a reasonable period so we have context if you contact us again.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">9</span> Your rights</h2>
+          <p>You can, at any time and free of charge:</p>
+          <ul>
+            <li>Ask for a copy of the personal data we hold about you.</li>
+            <li>Ask us to correct data that is wrong or outdated.</li>
+            <li>Ask us to delete your personal data, subject to records we are legally required to keep.</li>
+            <li>Withdraw consent for marketing emails at any time.</li>
+          </ul>
+          <div class="highlight">
+            <p><strong>How to exercise these rights:</strong> email <a href="mailto:support@odmpayments.com">support@odmpayments.com</a> from the address associated with your purchase. We respond to every request, typically within a few business days.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span> Security</h2>
+          <p>We use encryption in transit (HTTPS) across our website and tools, restrict access to personal data to those who need it, and rely on established providers for payments, email and hosting. No online service can promise absolute security, but we work to keep risk to a minimum — and if an incident ever affects your data, we will notify you as required by law.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span> Children</h2>
+          <p>Our products are intended for adults. We do not knowingly collect personal data from anyone under 18. If you believe a minor has provided us personal data, contact us and we will delete it.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">12</span> Changes to this policy</h2>
+          <p>If we change this policy, the "Last updated" date at the top of this page will reflect the new version. Significant changes — anything that meaningfully affects how your data is handled — will be communicated by email to active customers before taking effect.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">13</span> Contact</h2>
+          <p>Questions, requests or concerns about your privacy? We reply to every message, typically within one business day.</p>
+          <p>
+            <strong>ODM Payments, L.L.C.</strong><br>
+            Email: <a href="mailto:support@odmpayments.com">support@odmpayments.com</a><br>
+            131 Continental Dr, Suite 305 — Newark, DE 19713, United States
+          </p>
+        </section>
+
+      </div>
+
+      <div class="cta-box reveal">
+        <div>
+          <h2>A question about your data? <span>Just ask.</span></h2>
+          <p>Requests to access, correct or delete your information are handled by a real person — usually within a few business days.</p>
+        </div>
+        <a href="mailto:support@odmpayments.com" class="btn-primary">Email Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="logo" style="margin-bottom:18px;">
+            <img src="images/logo.png" alt="ODM Payments" style="height:52px; width:auto; display:block; object-fit:contain; max-width:none;">
+          </div>
+          <p>
+            A U.S.-based company creating and growing digital products for the world, centered on innovation, health, well-being and real customer care.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#mission">Our Mission</a>
+          <a href="mailto:support@odmpayments.com">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Customer Care</h4>
+          <a href="refund-cancellation-policy.html">Refund &amp; cancellation policy</a>
+          <a href="terms-of-service.html">Terms of service</a>
+          <a href="privacy-policy.html">Privacy policy</a>
+          <a href="index.html#policies">Delivery policy</a>
+          <a href="mailto:support@odmpayments.com">support@odmpayments.com</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company Information</h4>
+          <p><strong>ODM Payments, L.L.C.</strong></p>
+          <p>EIN: 36-5156196</p>
+          <p>https://odmpayments.com</p>
+          <p>131 Continental Dr, Suite 305</p>
+          <p>Newark, DE 19713</p>
+          <p>United States</p>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        Our products are informational and lifestyle tools intended for general wellness purposes. They do not provide medical advice, diagnosis, or treatment, and are not a substitute for consultation with a qualified health professional.
+      </p>
+
+      <div class="copyright">
+        © <span id="year"></span> ODM Payments, L.L.C. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: .15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
